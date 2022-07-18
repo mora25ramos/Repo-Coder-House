@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGARTE Propiedades </title>
+    <link rel="shortcut icon" href="../img/Iconos/Logos UGARTE/logougarte.jpg"
+        alt="Logo de la Inmobiliaria">
+    <link rel="stylesheet" type="text/css" href="../style.css/style.css" >
+</head>
+
+<body class="container">
+
+    <header id="header" class="justify-content">
+
+        <div id="headerDiv"> 
+     
+            <ul> 
+                <li> 
+                    <p> <img src="../img/Iconos/Logos Negros/logoemailnegro.png.crdownload" 
+                        class="iconosHeader" alt="Logo del mail"> info@ugartepropiedades.com.ar
+                    </p>
+                </li>
+
+                <li>
+                    <p> <img src="../img/Iconos/Logos Negros/whatsapp-negro.png.crdownload" 
+                            class="iconosHeader" alt="Logo Whatsapp"> 11 24601757 
+                    </p>
+                </li>
+
+                <li>
+                    <p> 
+                        <a href="https://www.instagram.com/info.ugarte.propiedades/" target="_blank" >  
+                            <img src="../redes/instagram-icon.svg" class="iconosHeader" 
+                                alt="Logo de Instagram" > 
+                        </a> 
+                    </p>
+                </li>
+            </ul>
+            
+        </div>
+        
+    </header>
+
+
+    <nav id="nav" class="align-items justify-content">
+
+        <ul class="flex-flow-row-nowrap text-center">
+
+            <div class="navLogo">
+            
+                <li>
+                    <a href= "index.html" >
+                        <img src= "../img/Iconos/Logos UGARTE/logougarte.jpg" 
+                            alt="Logo de la firma" 
+                            class="logoNav">
+                    </a>
+                </li>
+            </div>
+
+            <div>
+                <li>
+                    <a href="../pages/propiedades.html" > PROPIEDADES </a>
+                </li>
+
+                <li>
+                    <a href="../pages/venta.html" > VENTA </a>
+                </li>
+
+                <li>
+                    <a href="../pages/alquiler.html" > ALQUILER </a>
+                </li>
+
+                <li>
+                    <a href="../pages/tasaciones.html" > TASACIONES </a>
+                </li>
+
+                <li>
+                    <a href="../pages/contacto.html" > CONTACTO </a>
+                </li>
+            </div>
+        </ul>
+        
+    </nav>
+
+
+    <div  id="propiedadesBody"> 
+
+        <div class="contenedor"> 
+
+            <aside id="filtros">
+                <div class="container flex-flow">
+
+                        <h3 class="text-center"> Filtrar búsqueda </h3>
+                        <form action="envio.php">
+                            <div class="asideDiv"> 
+                                <label for="operacion" > Tipo de Operación </label>
+                                <input type="text" id="operacion" placeholder="Ej: Alquiler" >
+                            </div>
+                            <div class="asideDiv"> 
+                                <label for="precio" > Rango de precios </label>
+                                <input type="text" id="precio" placeholder="Ej: $500.000" >
+                            </div>
+                            <div class="asideDiv"> 
+                                <label for="propiedad" > Tipo de propiedad </label>
+                                <input type="text" id="propiedad" placeholder="Ej: Departamento" >
+                            </div>
+                            <div class="asideDiv">
+                                <label for="zona" > Zona </label>
+                                <input type="text" id="zona" placeholder="Ej: CABA" >
+                            </div>
+                            <div class="asideDiv">
+                                <label for="ambientes" > Ambientes </label>
+                                <input type="text" id="ambientes" placeholder="Ej: 4 ambientes" >
+                            </div>
+                            <div class="asideDiv">
+                                <label for="dorm" > Dormitorios </label>
+                                <input type="text" id="dorm" placeholder="Ej: 3 Dormitorios" >
+                            </div>
+                        <div class="asideDiv">
+                                <label for="caract" > Características </label>
+                                <input type="text" id="caract" placeholder="Ej: Jardín" >
+                        </div>
+                        <div class="asideDiv text-center" >
+                                <input type="submit" value="Aplicar filtros" >
+                        </div> 
+                            
+                        </form>
+                </div>
+            </aside>
+
+
+            <main id="mainProps">
+
+                <div class="flex-direction"> 
+
+                    <div class="titulosPropAlqVenta"> 
+                        <section>
+                            <h1 class="text-center"> PROPIEDADES </h1>
+                        </section>
+                    </div>
+
+                    <div id="props" class="flex-wrap justify-content align-items">
+                        
+                        <ul>
+                            <li>
+                                <div class="containerProps text-center">
+                                    <img src="../img/Propiedades/Venta/casa.pedernera1900.2.jpg" 
+                                         alt="Casa en Villa Adelina"
+                                        class="propiedades2" >
+                                    <p> Casa - Pedernera 1900</p>
+                                    <p> U$D 400.000 </p>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <div class="containerProps text-center">
+                                    <img src="../img/Propiedades/Venta/casa.santaclara.pablo.jpg" 
+                                        alt="Casa en Barrio Cerrado Santa Clara"
+                                        class="propiedades2" >
+                                    <p> Casa - BC "Santa Clara"</p>
+                                    <p> U$D 505.000 </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="containerProps text-center">
+                                    <img src="../img/Propiedades/Venta/casa.barreiroaguirre4000.jpg" 
+                                        alt="Casa en Olivos" 
+                                        class="propiedades2">
+                                    <p> Casa - Barreiro Aguirre 4000 </p>
+                                    <p> U$D 319.000 </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="containerProps text-center">
+                                    <img src="../img/Propiedades/Alquiler/local.libertador.webp" 
+                                        alt="Local Av del Libertador"
+                                        class="propiedades2">
+                                    <p> Local - Av del Libertador</p>
+                                    <p> $220.000 </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="containerProps text-center">
+                                    <img src="../img/Propiedades/Venta/casa.juandegaray2000.jpg" 
+                                        alt="Casa en Olivos"
+                                        class="propiedades2" >
+                                    <p> Casa - Juan de Garay 2000</p>
+                                    <p> U$D 529.000 </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="containerProps text-center">
+                                    <img src="../img/Propiedades/Venta/casa-loscastaños.jpg" 
+                                        alt="Casa en Barrio Cerrado Los Castaños"
+                                        class="propiedades2">
+                                    <p> Casa - BC "Los Castaños" </p>
+                                    <p> U$D 390.000 </p>
+                                </div>
+                            </li>
+            
+                            <li>
+                                <div class="containerProps text-center">
+                                    <img src="../img/Propiedades/Alquiler/rosetti3905.jpg" 
+                                        alt="Rosetti 3905" 
+                                        class="propiedades2">
+                                    <p> Oficina - Rosetti 3905 </p>
+                                    <p> $45.000 </p>
+                                </div>
+                            </li>
+            
+                                    
+                            <li>
+                                <div class="containerProps text-center">
+                                    <img src="../img/Propiedades/Venta/casahugo.jpg" 
+                                        alt="Casa en Florida Vicente López" 
+                                        class="propiedades2">
+                                    <p> Casa - Beiro 1100 </p>
+                                    <p> U$D 470.000 </p>
+                                </div>
+                            </li>
+            
+            
+                            <li>
+                                <div class="containerProps text-center">
+                                    <img src="../img/Propiedades/Venta/casatalar.jpg" 
+                                        alt="Casa en Barrio Cerrado Talar de Pacheco" 
+                                        class="propiedades2">
+                                    <p> Casa - BC "Talar de Pacheco" </p>
+                                    <p> U$D 990.000 </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="containerProps text-center">
+                                    <img src="../img/Propiedades/Alquiler/duplex.ernestodelascarreras2285.jpg" 
+                                        alt="Duplex en Beccar" 
+                                        class="propiedades2">
+                                    <p> Duplex - E. de las Carreras </p>
+                                    <p> $80.000 </p>
+                                </div>
+                            </li>
+            
+                            <li>
+                                 <div class="containerProps text-center">
+                                    <img src="../img/Propiedades/Venta/p.buenosaires3600.jpg" 
+                                        alt="PH en Munro"
+                                        class="propiedades2" >
+                                    <p> PH - Buenos Aires 3600</p>
+                                    <p> U$D 490.000 </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="containerProps text-center">
+                                    <img src="../img/Propiedades/Venta/depto.avcazon1000webp.webp" 
+                                        alt="Departamento en Tigre" 
+                                        class="propiedades2">
+                                    <p> Dpto - Av Cazón 1000 </p>
+                                    <p> U$D 120.000 </p>
+                                </div>
+                            </li>
+            
+                            <li>
+                                <div class="containerProps text-center">
+                                    <img src="../img/Propiedades/Venta/local.libertador800.webp" 
+                                        alt="Local en San Fernando"
+                                        class="propiedades2" >
+                                    <p> Local - Av Libertador 800 </p>
+                                    <p> U$D 60.500 </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="containerProps text-center">
+                                    <img src="../img/Propiedades/Alquiler/galpon.avdeldirectorio5900.jpg" 
+                                        alt="Galpón"
+                                        class="propiedades2" >
+                                    <p> Galpón - Av Directorio </p>
+                                    <p> U$D 6.500 </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="containerProps text-center">
+                                    <img src="../img/Propiedades/Venta/casa.santaclara.gz.jpg" 
+                                        alt="Casa en Barrio Cerrado Santa Clara"
+                                        class="propiedades2" >
+                                    <p> Casa - BC "Santa Clara"</p>
+                                    <p> U$D 490.000 </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="containerProps text-center">
+                                    <img src="../img/Propiedades/Venta/casa.santaclara.pia.webp" 
+                                        alt="Casa en Barrio Cerrado Santa Clara" 
+                                        class="propiedades2">
+                                    <p> Casa - BC "Santa Clara" </p>
+                                    <p> U$D 480.000 </p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+       
+    </div>
+
+
+
+
+<footer id="pie"> 
+    <main>
+
+        <section id="info">
+            <div class="container">
+
+                <ul id="pieUl"> 
+
+                    <div>
+                        <li> 
+                            <p> TEL: 2085-0282</p>
+                        </li>
+                    </div>
+
+                    <div> 
+                        <li>
+                            <p> MARTILLERO: ALEJANDRO RAMOS C.S.I. 5449 </p>
+                        </li>
+                    </div>
+
+                </ul>
+            </div>
+        </section>
+
+               
+        <section id="location">
+            <div class="container">
+                <div> 
+                    <p class="text-center"> Gdor. Marcelino Ugarte 1582, 4B, Olivos      
+                    </p>
+                        
+                        <img src="../img/Mapa/mapaugarte.jpg" 
+                                alt="La imagen muestra un mapa donde se marca la ubicación de la oficina"
+                                class="mapa--ugarte" >
+                </div>
+
+                
+            </div>
+        </section>
+
+        <section id="advertencia">
+            <div class="container">
+                <p class="final"> Todas las medidas enunciadas son meramente orientativas, las medidas exactas serán las que se expresen en el respectivo título de propiedad de cada inmueble. Todas las fotos, imagenes y videos son meramente ilustrativos y no contractuales. Los precios enunciados son meramente orientativos y no contractuales.. </p>
+            </div>
+        </section>
+    </main>
+</footer>
+</body>
+</html>

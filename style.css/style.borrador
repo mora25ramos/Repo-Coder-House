@@ -1,0 +1,442 @@
+/*background*/
+
+body {
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;   
+    background-color: rgb(245, 245, 245);
+} 
+
+/*general*/
+
+.font-size { font-size: 1rem; }
+
+.text-center { text-align: center; }
+
+.bold { font-weight: bold;}
+
+ul { list-style: none; }
+li { display: inline-block; }
+p { font-size: 1rem; }
+h1 { font-size: 3rem; }
+h2 { font-size: 2.7rem; }
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/*header*/
+
+#header {
+    background-color: rgb(245, 245, 245);
+    width: auto;
+    height: 40px;
+    margin-top: 0;
+    padding-bottom: 10px;
+    grid-area: "header";
+  
+}
+
+#divHeader {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 62%;
+}
+
+#header div ul li {
+    display: inline-block;
+    margin-right: 1rem;
+    text-align: center;
+   
+}
+
+.iconosHeader {
+    width: 20px;
+    height: 18px;
+    text-align: center;
+}
+
+/*nav*/
+
+#nav  {
+    background-color: rgb(115, 16, 26);
+    width: auto;
+    height: auto;   
+    overflow: auto;
+
+    position: sticky;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+
+    grid-area: "nav" ;
+}
+
+#header #nav .container {
+    width: auto;
+    height: auto;
+}
+
+#nav .container .logoNav {
+    width: 150px;
+    height: 150px;
+    padding-right: 185px;
+}
+
+
+nav ul li {
+    display: inline-block;
+    font-weight: 400;
+}
+
+nav ul li a {
+   color: white;
+   text-decoration: none;
+   font-family: sans-serif;
+   font-size: 1.2rem;
+   margin-top: 10px;
+    margin-right: 15px;
+}
+
+
+/*inicio*/
+
+main #img .container img {
+    width: 1349px;
+    height: 500px;
+   
+}
+
+
+/*section 1*/
+main #titulo .container {
+    font-weight: bold;
+    padding-top: 50px;
+    color: black;
+}
+
+/*section 2*/
+#buscador.text-center .container {
+    font-size: 0.9rem;
+    background-color: rgb(218, 206, 206);
+    width: fit-content;
+    height: 100px;
+    margin-bottom: 150px;
+    padding: 30px;
+}
+
+#boton {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+
+}
+
+#boton:hover {
+    background-color: beige;
+}
+
+/*section 3*/
+.propiedades {
+    height: 11rem;
+    width: 13rem ;
+}
+
+.tituloInmueblesDestacados {
+    width: 100%;
+    padding-top: 40px;
+ }
+
+#propsDestacadas {
+    display: flex;
+}
+
+.flex-flowI2 {
+    flex-flow: row wrap;
+ }
+
+#destacados {
+    display: flex;
+}
+
+.flex-flowI {
+   flex-flow: row wrap;
+}
+
+.justify-contentI {
+    justify-content: space-between;
+ }
+
+.align-itemsI {
+    align-items: center;
+ }
+/*Pág Props*/
+
+#propiedadesBody  {
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    background-image: url(../img/Fondos/fondoblurry.jpg);
+}
+
+#mainProps section .container  {
+    background-color: rgb(218, 206, 206);
+    margin: 10px 50px;
+    padding: 25px;
+}
+
+#mainProps section div ul li .containerProps {
+    background-color: rgb(223, 219, 219);
+    justify-content: space-between 12px;
+    border-radius: 1rem;
+    padding: 25px;
+    padding-bottom: 35px;
+    margin-left: 45px;
+    margin-top: 15px;
+    width: 14rem;
+}
+
+
+/*Págs Alquiler, Venta y Props*/
+
+.contenedor {
+    display: grid ;
+    grid-template-columns: 22% 78%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "filtros titulo"
+    "filtros props";
+}  
+
+#filtros  {
+ grid-area: "filtros"; 
+ background-color: rgb(184, 174, 174);
+ font-size: small;
+ padding-top: 40px;
+ padding-left: 5px;
+}
+
+.titulosPropAlqVenta  {
+    grid-area: "titulo";
+    padding-top: 30px;
+  }
+
+
+#props  {
+   grid-area: "props";
+  }
+
+#filtros .container {
+    display: flex;
+  }
+  
+
+.flex-flow {
+    flex-flow: column nowrap;
+  }
+
+
+.flex-direction {
+    flex-direction: column;
+  }
+
+
+.flex-wrap {
+    flex-wrap: nowrap;
+  }
+
+
+#filtros .asideDiv {
+    margin-bottom: 15px;
+    margin-top: 25px;
+  }
+  
+
+#mainProps  {
+  display: flex;
+}
+
+.justify-content  {
+    justify-content: center;
+  }
+
+#propiedadesBody  {
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    background-image: url(../img/Fondos/fondoblurry.jpg);
+}
+
+
+#mainProps section div ul li .containerProps {
+    background-color: rgb(233, 227, 227);
+    border-radius: 0.7rem;
+    padding: 12px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;   
+}
+
+/*Página Contacto*/
+
+.contenedorContacto {
+    display: grid ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "mapa contactanos"
+    "mapa consultas";
+} 
+
+#fondo {
+background-repeat: no-repeat;
+background-position: fixed;
+background-size: cover;
+background-image: url(../img/Fondos/fondoblurry.jpg);
+}
+
+#mapa {
+    grid-area: "mapa";
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 45px;
+}
+
+
+#comoContactarnos {
+    grid-area: "contactanos";
+    padding-bottom: 35px;
+}
+
+#mainContacto {
+    display: flex;
+}
+
+.titulosMain {
+    margin: 40px 200px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgb(218, 206, 206);
+}
+
+.pMain {
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.line-height {
+    line-height: 50px ;
+}
+
+#tuConsulta .container {
+    padding-left: 150px;
+}
+
+#tuConsulta {
+   background-color: rgb(184, 174, 174);
+    
+    font-size: 0.8rem;
+    
+    width: auto;   
+    padding-bottom: 25px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    grid-area: "consultas";
+    
+    display: flex;
+}
+
+
+
+
+/*Pàg Tasaciones*/
+
+#tasaciones {
+    display: flex;
+}
+
+#tasaciones p {
+    padding-bottom: 5px;
+}
+
+#tasaciones section .container {
+    background-color: rgb(218, 206, 206);
+    padding: 10px;
+    margin-bottom: 50px;
+
+}
+
+.flex-directionT {
+   flex-direction: row;
+}
+
+
+ 
+
+/*footer*/
+
+#pie {
+    background-color: rgb(138, 28, 39);
+    width: 100%;
+    height: fit-content;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    overflow: auto;
+    color: rgb(245, 245, 245);
+
+    grid-area: "footer";
+}
+
+#pie main #info .container {
+    background-color: rgb(115, 16, 26);
+}
+
+
+#pie main #location .container {
+   padding-top: 15px;
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+#pie main #advertencia {
+    width: 100%;
+    height: fit-content;
+    color: rgb(184, 174, 174);
+    margin: 25px 35px;
+}
+
+#pie main #advertencia .container .final{
+    font-size: 0.8rem;
+}
+
+.iconos {
+    height: 3rem;
+    width: 3rem ;
+}
+
+.mapa--ugarte {
+    height: 18rem;
+    width: 20rem ;
+    justify-content: center;
+}
+
+
+/*mobile first*/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "buscador"
+    "footer"
+    ;
+} 
+

@@ -1,0 +1,824 @@
+/*general*/
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+} 
+
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(245, 245, 245);
+} 
+
+.container {
+    max-width: 342vw;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer"
+    ;
+} 
+
+.iconos {
+    height: 1.5rem;
+    width: 1.5rem ;
+}
+
+.font-size { font-size: 1rem; }
+
+.text-center { text-align: center; }
+
+.bold { font-weight: bold;}
+
+.justify-content { justify-content: center;}
+.align-items { align-items: center;}
+.flex-flow-row-nowrap { flex-flow: row nowrap;} 
+.flex-flow-row-wrap { flex-flow: row wrap;}
+ 
+
+ul { list-style: none; }
+li { display: inline-block; }
+p { font-size: 1rem; }
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+
+/*header*/
+
+#header {
+    display: flex;
+    grid-area: "header";
+    background-color: rgb(245, 245, 245);
+}
+
+#headerDiv {
+    height: auto;
+    overflow: auto;
+}
+
+
+.iconosHeader {
+    width: 12px;
+    height: 10px;
+    margin-right: 3px;
+}
+
+/*nav*/
+
+#nav  {
+    background-color: rgb(115, 16, 26);
+    width: auto;
+    height: auto;   
+    overflow: auto;
+
+    position: sticky;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+
+    grid-area: "nav" ;
+
+    display: flex;
+}
+
+/* navbar bootstrap*/
+#navbar {
+    cursor: pointer;
+
+    position: sticky;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+
+    grid-area: "navbar" ;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-nav {
+    width: 100%;
+    text-align: center;
+}
+
+/* fin nav boot */
+
+
+#nav:hover {
+    cursor: pointer;
+}
+
+#nav .navLogo  {
+    width: auto;
+}
+
+.logoNav {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+
+nav ul li a {
+   color: white;
+   text-decoration: none;
+   font-size: 1.4rem;
+   margin: 7px;
+}
+
+
+/*inicio*/
+
+#main {
+   grid-area: "main";
+}
+
+#main #img img {
+    height: auto;
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+/*section 1*/
+#titulo {
+    font-weight: bold;
+    padding: 25px 0px;
+    color: black;
+    display: flex;
+}
+
+/*section 2*/
+#buscador {
+    display: flex;
+}
+
+#buscadorDiv {
+    width: fit-content;
+    height: fit-content;
+    
+    background-color: rgb(218, 206, 206);
+    padding: 10px;
+}
+
+#boton {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 0.5px solid;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+#boton:hover {
+    background-color: beige;
+}
+
+
+/*section 3*/
+.propiedades {
+    height: 10rem;
+    width: 12rem ;
+}
+
+.tituloInmueblesDestacados {
+    width: 100%;
+    padding-top: 40px;
+ }
+
+#propsDestacadas {
+    display: flex;
+}
+
+
+#destacados {
+    display: flex;
+    width: auto;
+    overflow: hidden;
+    padding: 30px 0px;
+    margin-bottom: 15px;
+}
+
+
+/*footer*/
+#pie {
+    grid-area: "footer";
+    background-color: rgb(138, 28, 39);
+    width: auto;
+    height: auto;
+    overflow: auto;
+    font-weight: 400;
+    color: rgb(245, 245, 245);
+} 
+
+#pie #info{
+    background-color: rgb(115, 16, 26);
+}
+
+#pie #location {
+    padding-top: 5px;
+    margin-bottom: 1px;
+    text-align: center;
+ }
+
+ #pie #advertencia {
+    width: auto;
+    height: auto;
+    overflow: auto;
+    color: rgb(184, 174, 174);
+    margin: 5px 7px;
+    font-size: 1rem;
+}
+
+.mapa--ugarte {
+    height: 18rem;
+    width: 20rem ;
+    justify-content: center;
+}
+
+
+/*Pág Props*/
+
+#propiedadesBody  {
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    background-image: url(../img/Fondos/fondoblurry.jpg);
+}
+
+.propiedades2 {
+    width: 200px;
+    height: 180px;
+    padding: 10px;
+}
+
+#mainProps section .container  {
+    background-color: rgb(218, 206, 206);
+    margin: 10px 50px;
+    padding: 25px;
+}
+
+.containerProps {
+    background-color: rgb(223, 219, 219);
+    border-radius: 1rem;
+    padding: 25px;
+    padding-bottom: 35px;
+    margin-top: 15px;
+    margin-left: 40px;
+    width: auto;
+}
+
+
+/*Págs Alquiler, Venta y Props*/
+
+.contenedor {
+    display: grid ;
+    grid-template-columns: 22% 78%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "filtros titulo"
+    "filtros props";
+}  
+
+#filtros  {
+ grid-area: "filtros"; 
+ background-color: rgb(184, 174, 174);
+ font-size: small;
+ padding-top: 40px;
+ padding-left: 5px;
+}
+
+.titulosPropAlqVenta  {
+    grid-area: "titulo";
+    padding-top: 30px;
+  }
+
+
+#props  {
+   grid-area: "props";
+  }
+
+#filtros .container {
+    display: flex;
+  }
+  
+
+.flex-flow {
+    flex-flow: column nowrap;
+  }
+
+
+.flex-direction {
+    flex-direction: column;
+  }
+
+
+.flex-wrap {
+    flex-wrap: nowrap;
+  }
+
+
+#filtros .asideDiv {
+    margin-bottom: 15px;
+    margin-top: 25px;
+  }
+  
+
+#mainProps  {
+  display: flex;
+}
+
+#propiedadesBody  {
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    background-image: url(../img/Fondos/fondoblurry.jpg);
+}
+
+
+#mainProps section div ul li .containerProps {
+    background-color: rgb(233, 227, 227);
+    border-radius: 0.7rem;
+    padding: 12px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;   
+}
+
+
+/*Página Contacto*/
+
+.contenedorContacto {
+    display: grid ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "contacto"
+    "mapa";
+} 
+
+#fondo {
+background-repeat: no-repeat;
+background-position: fixed;
+background-size: cover;
+background-image: url(../img/Fondos/fondoblurry.jpg);
+}
+
+#mapa {
+    grid-area: "mapa";
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 45px;
+}
+
+
+#contacto-aside {
+    grid-area: "contacto";
+    padding: 45px;
+}
+
+#aside-contacto-bg {
+    background: linear-gradient(to bottom, whitesmoke, beige);
+}
+
+#mainContacto {
+    grid-area: "mapa";
+    padding-bottom: 40px;
+    padding-top: 15px;
+}
+
+.titulosMain {
+    background-color: rgba(230, 217, 217, 0.863);
+}
+
+.pMain {
+    margin-top: 12px;
+}
+
+#sectionInfo { 
+    padding-bottom: 30px; 
+}
+
+.line-height {
+    line-height: 10px;
+}
+
+.formConsulta { 
+    font-size: 1.2rem; 
+    padding-bottom: 6px;
+}
+
+
+
+
+
+/*Pàg Tasaciones*/
+
+.margin-top {
+    margin-top: 20px;
+}
+
+#tasaciones {
+    display: flex;
+    padding-top: 40px;
+}
+
+#tasaciones p {
+    padding-bottom: 5px;
+}
+
+#form-tasacion {
+    background-color: rgb(228, 216, 216);
+    margin-bottom: 50px;
+    padding: 25px;
+    border-radius: 15px;
+
+}
+
+.flex-directionT {
+   flex-direction: row;
+}
+
+#button {
+    margin: 10px;
+    font-size: 1.5rem;
+ }
+
+
+/*---------*/
+
+@media only screen and (min-width: 350px) {
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 5vh 10vh 75vh 10vh;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+     }
+
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    p { font-size: 1.2rem; }
+    
+    .font-size { font-size: 1.5rem; }
+
+    .iconosHeader {
+        width: 15px;
+        height: 12px;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+
+    #nav .logoNav {
+        width: 200px;
+        height: 200px;
+    }
+    
+    
+    nav ul li a {
+       font-size: 1.5rem;
+       margin-top: 8px;
+       margin-right: 10px;
+    }
+
+    .propiedades {
+        height: 20rem;
+        width: 24rem ;
+    }
+
+    .mapa--ugarte {
+        height: 18rem;
+        width: 20rem ;
+    }
+
+    #boton {
+        font-size: 1.4rem;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 8px;
+        border: 1px solid;
+    }
+}
+
+
+@media only screen and (min-width: 390px) {
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 5vh 10vh 75vh 10vh;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+     }
+
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    p { font-size: 1.3rem; }
+    
+    .font-size { font-size: 1rem; }
+
+    .iconosHeader {
+        width: 15px;
+        height: 12px;
+        margin-right: 1.5px;
+        margin-left: 1.5px;
+    }
+
+    #nav .logoNav {
+        width: 250px;
+        height: 250px;
+    }
+    
+    
+    nav ul li a {
+       font-size: 1.5rem;
+       margin-right: 10px;
+    }
+
+    .mapa--ugarte {
+        height: 20rem;
+        width: 22rem ;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    body {
+       grid-template-columns: 1fr;
+       grid-template-rows: 5vh 10vh 75vh 10vh;
+       grid-template-areas: 
+       "header"
+       "nav"
+       "main"
+       "footer";
+    }
+
+    p { font-size: 2.6rem; }
+    h1 { font-size: 5rem; }
+    h2 { font-size: 4rem; }
+    h3 { font-size: 3rem; }
+
+    .iconos {
+        height: 3rem;
+        width: 3rem ;
+    }
+    
+    .font-size { font-size: 2rem; }
+
+    .iconosHeader {
+        width: 30px;
+        height: 28px;
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+
+    #nav .logoNav {
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+    }
+    
+    
+    nav ul li a {
+       font-size: 3rem;
+       margin-top: 14px;
+       margin-right: 20px;
+    }
+
+    .propiedades {
+        height: 20rem;
+        width: 24rem ;
+    }
+
+    .mapa--ugarte {
+        height: 36rem;
+        width: 40rem ;
+    }
+
+    #boton {
+        font-size: 2rem;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 8px;
+        border: 1px solid;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    nav ul li a {
+        font-size: 2.7rem;
+        margin-right: 12px;
+     }
+ 
+     .propiedades {
+         height: 25rem;
+         width: 32rem ;
+     }
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+    body {
+       grid-template-rows: 2vh 3vh 80vh 15vh;
+    }
+
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2.5rem; }
+    h3 { font-size: 1.4rem; }
+    p { font-size: 2.2rem; }
+
+    .iconos {
+        height: 2rem;
+        width: 2rem ;
+    }
+    
+    .font-size { font-size: 1.5rem; }
+
+    .iconosHeader {
+        width: 20px;
+        height: 18px;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+    #nav .logoNav {
+        width: 250px;
+        height: 250px;
+        padding: 5px;
+    }
+    
+    
+    nav ul li a {
+       font-size: 2.3rem;
+       margin-top: 10px;
+       margin-right: 14px;
+    }
+
+    .propiedades {
+        height: 15rem;
+        width: 19rem ;
+    }
+
+    .mapa--ugarte {
+        height: 25rem;
+        width: 29rem ;
+    }
+
+    #boton {
+        font-size: 1.2rem;
+        padding: 6px;
+        margin-top: 6px;
+        border-radius: 3.5px;
+        border: 0.6px solid;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    .container {
+        max-width: 1400vw;
+    } 
+
+    #headerDiv {
+        width: auto;
+    } 
+
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2.5rem; }
+    h3 { font-size: 2rem; }
+    p { font-size: 1.2rem; }
+
+    .iconos {
+        height: 2rem;
+        width: 2rem ;
+    }
+    
+    .font-size { font-size: 1.2rem; }
+
+    .iconosHeader {
+        width: 20px;
+        height: 18px;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+    #nav .logoNav {
+        width: 150px;
+        height: 150px;
+    }
+    
+    
+    nav ul li a {
+       font-size: 1.8rem;
+       margin-right: 14px;
+    }
+
+    #main #img img { 
+        height: 450px; 
+    }
+
+    .propiedades {
+        height: 15rem;
+        width: 19rem ;
+    }
+
+    .mapa--ugarte {
+        height: 25rem;
+        width: 29rem ;
+    }
+
+    #boton {
+        font-size: 1.2rem;
+        padding: 6px;
+        margin-top: 6px;
+        border-radius: 3.5px;
+        border: 0.6px solid;
+    }
+
+
+    /*PAG CONSULTAS*/
+
+    .contenedorContacto {
+        display: grid ;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "contacto mapa";
+    } 
+    
+    #fondo {
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    background-image: url(../img/Fondos/fondoblurry.jpg);
+    }
+    
+    #mapa {
+        grid-area: "mapa";
+        margin-right: 30px;
+        margin-left: 30px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 45px;
+    }
+    
+    
+    #contacto-aside {
+        grid-area: "contacto";
+        padding: 15px;
+        background: linear-gradient(to bottom, whitesmoke, beige);
+    }
+    
+    #mainContacto {
+        grid-area: "mapa";
+        padding-bottom: 40px;
+        padding-top: 15px;
+    }
+    
+    .titulosMain {
+        background-color: rgba(230, 217, 217, 0.863);
+    }
+    
+    .pMain {
+        margin-top: 12px;
+    }
+    
+    #sectionInfo { 
+        padding-bottom: 30px; 
+    }
+    
+    .line-height {
+        line-height: 10px;
+    }
+    
+    .formConsulta { 
+        font-size: 1.2rem; 
+        padding-bottom: 6px;
+    }
+
+}
